@@ -3,6 +3,7 @@
 *{
     margin:0px;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans','sans serif';
 }
 nav{
     display: flex;
@@ -23,7 +24,7 @@ nav{
         margin-left: 4vw;
     }
 }
-.chart{
+.cart{
     display: flex;
     align-items: center;
     width: 70px;
@@ -38,7 +39,10 @@ nav{
         color:white;
     }
 }
-
+.image-responsive{
+    width: 100%;
+    height: auto;
+}
 .Hero{
     background-color:#ffe9d6 ;  
     .columns{
@@ -46,13 +50,10 @@ nav{
         align-items: center;
     }
     .heroImage{
-        width: 100%;
-        height: auto;
         flex: 1;
     }
     .heroText{
         margin-left:10px;
-        font-family: 'Kumbh Sans';
         font-weight: bold;
         font-size: 7vw;
         line-height: 7vw;
@@ -82,6 +83,47 @@ nav{
         font-size: 2vw;
         color: white;
         text-align: center;
-        font-family: 'Kumbh Sans';
     }
+}
+.products{
+    text-align: center;
+    &-title{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+}
+.card{
+    min-width: 200px;
+    width: 350px;
+    
+    &-title{
+        color: black;
+        margin-top:5px;
+        margin-bottom: 20px;
+    }
+    .addcart{
+        width: 70%;
+        height:40px;
+        border:0px ;
+        border-radius: 5px;
+        background-color: #ffa700;
+        font-weight: bold;
+    }
+}
+footer{
+    background-color: black;
+    height: 200px;
+    padding: 70px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
 }
